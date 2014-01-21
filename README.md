@@ -1,4 +1,4 @@
-QuranTranslationDisplayClient
+Quran Translation Display Client
 =============================
 
-Android client application for Quran Translation Display app.
+Android client application for _Quran Translation Display_ app.
