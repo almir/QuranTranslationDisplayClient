@@ -3,5 +3,17 @@
 
     <string name="app_name">Quran Translation Display Client</string>
     <string name="settings">Podesavanja</string>
+    <string name="set_letters_size">Namjesti veličinu slova</string>
+    <string name="set_timeout">Namjesti vrijeme čekanja</string>
+    <string-array name="timeout_period">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string name="save">Sačuvaj</string>
 
 </resources>
