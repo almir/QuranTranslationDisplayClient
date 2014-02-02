@@ -1,13 +1,13 @@
 package com.mhalka.qurantranslationdisplayclient;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	private ImageView mHiddenSettings;
@@ -27,9 +27,8 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public boolean onLongClick(View v) {
-				// TODO Auto-generated method stub
-				Toast.makeText(getApplicationContext(), "Aktivirano je skriveno dugme.",
-						Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent(MainActivity.this, HiddenSettingsActivity.class);
+                startActivity(intent);
 				return false;
 			}
 		});

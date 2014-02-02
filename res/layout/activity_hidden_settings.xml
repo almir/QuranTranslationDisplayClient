@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background" >
+    android:layout_height="match_parent" >
     
     <TextView
         android:id="@+id/lbl_letters"
@@ -27,15 +26,24 @@
         <requestFocus />
     </EditText>
     
+    <TextView
+        android:id="@+id/lbl_timeout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/ed_letters"
+        android:text="@string/set_timeout"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
     <Spinner
         android:id="@+id/spin_timeout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
-        android:layout_below="@+id/ed_letters"
-        android:prompt="@string/set_timeout"
-        android:entries="@string/settings" />
+        android:layout_below="@+id/lbl_timeout"
+        android:entries="@array/timeout_period" />
 
     <Button
         android:id="@+id/btn_save"
