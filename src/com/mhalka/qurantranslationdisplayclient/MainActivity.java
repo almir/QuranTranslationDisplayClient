@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
 			@Override
 			public boolean onLongClick(View v) {
 				Intent intent = new Intent(MainActivity.this, HiddenSettingsActivity.class);
-                startActivity(intent);
+				startActivity(intent);
 				return false;
 			}
 		});
